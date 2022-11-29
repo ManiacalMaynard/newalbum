@@ -1,4 +1,5 @@
-#Case Study: New Music Album Landing Page
+# Case Study: New Music Album Landing Page
+
 **Google UX Certification, Responsive Web Site Project, Section 6, Overview and Process Notes**
 
 The goal here is to present a web-based version of a fairly standard UX Design Case Study. These projects are often created as presentation documents but I wanted to practice my front end coding skills as well as make the study more easily available as a portfolio piece in it's own right.
