@@ -1,0 +1,48 @@
+/*     -----     Set up, reset, and variables     -----     */
+*,
+*:before,
+*:after {
+  padding: 30px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --one-dark: hsl(30, 50%, 20%);
+  --one-light: hsl(30, 50%, 97%);
+  --two-dark: hsl(90, 50%, 20%);
+  --three-dark: hsl(150, 50%, 20%);
+  --four-dark: hsl(210, 50%, 20%);
+  --five-dark: hsl(270, 50%, 20%);
+  --six-dark: hsl(330, 50%, 20%);
+  --offwhite: hsl(30, 10%, 95%);
+}
+
+
+
+.one h2 {
+  color: var(--one-dark);
+}
+
+
+.two {
+  color: var(--two-dark);
+}
+
+.three {
+  color: var(--three-dark);
+}
+
+.four {
+  color: var(--four-dark);
+}
+
+.five {
+  color: var(--five-dark);
+}
+
+.six {
+  color: var(--six-dark);
+}
+
+
