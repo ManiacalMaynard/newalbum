@@ -2,47 +2,96 @@
 *,
 *:before,
 *:after {
-  padding: 30px;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* This is for testing, outlines everyting in pink so I can see what's what, safely ignore */
+/* * { border: 1px pink solid} */
+
 :root {
-  --one-dark: hsl(30, 50%, 20%);
-  --one-light: hsl(30, 50%, 97%);
-  --two-dark: hsl(90, 50%, 20%);
-  --three-dark: hsl(150, 50%, 20%);
-  --four-dark: hsl(210, 50%, 20%);
-  --five-dark: hsl(270, 50%, 20%);
-  --six-dark: hsl(330, 50%, 20%);
-  --offwhite: hsl(30, 10%, 95%);
+  --one: hsl(83, 15%, 50%);
+  --two: hsl(17, 48%, 50%);
+  --three: hsl(210, 10%, 50%);
+  --four: hsl(40, 49%, 50%);
+  --five: hsl(185, 21%, 50%);
+  --six: hsl(51, 15%, 50%);
+  --offwhite: hsl(45, 20%, 90%);
 }
 
+/*     -----     Main Block Elements     -----     */
 
+body {
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-item {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+hr {
+  height: 4px;
+  width: 100%;
+  border-width: 0; 
+}
+
+section {
+  width: 80%;
+  padding: 5%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+section p {
+  margin-top: 2rem;
+}
 
 .one h2 {
-  color: var(--one-dark);
+  color: var(--one);
 }
 
-
-.two {
-  color: var(--two-dark);
+.two h2 {
+  color: var(--two);
 }
 
-.three {
-  color: var(--three-dark);
+.three h2 {
+  color: var(--three);
 }
 
-.four {
-  color: var(--four-dark);
+.four h2 {
+  color: var(--four);
 }
 
-.five {
-  color: var(--five-dark);
+.five h2 {
+  color: var(--five);
 }
 
-.six {
-  color: var(--six-dark);
+.six h2 {
+  color: var(--one);
 }
-
-
