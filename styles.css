@@ -72,6 +72,15 @@ section p {
   margin-top: 2rem;
 }
 
+.content {
+  margin-top: 3rem;
+  display: grid;
+}
+
+.content > img {
+  height: 6rem;
+}
+
 .one h2 {
   color: var(--one);
 }
