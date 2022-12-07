@@ -10,6 +10,12 @@ Wish me luck!
 
 ### Change Log
 
+221206:
+
+- New grid for 'content', needs clarity and cleanup
+- Adds new header in prep for new nav elements (JS)
+- Cleans up unused code in styles.css
+
 221130:
 
 - Adds color pallate
