@@ -7,9 +7,6 @@
   box-sizing: border-box;
 }
 
-/* This is for testing, outlines everyting in pink so I can see what's what, safely ignore */
-/* * { border: 1px pink solid} */
-
 :root {
   --one: hsl(83, 15%, 50%);
   --two: hsl(17, 48%, 50%);
@@ -17,8 +14,12 @@
   --four: hsl(40, 49%, 50%);
   --five: hsl(185, 21%, 50%);
   --six: hsl(51, 15%, 50%);
-  --offwhite: hsl(45, 20%, 90%);
+  --offwhite: hsl(40, 20%, 93%);
 }
+
+/* This is for only testing and outlines everyting in pink so I can see what's what, safely ignore */
+/* * { border: 1px pink solid} */
+
 
 /*     -----     Main Block Elements     -----     */
 
@@ -28,22 +29,28 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  font-size: 0.9rem;
 }
 
-nav {
+header {
   width: 100%;
-  padding: 2rem 0rem;
+  padding: 2rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Oswald', sans-serif;
+  background-color: var(--one);
+  color: var(--offwhite);
 }
 
-.nav-item {
-  font-size: 2rem;
-  font-weight: bolder;
-}
+/* .nav-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
 
 hr {
   height: 4px;
@@ -73,34 +80,34 @@ section p {
 }
 
 .content {
-  margin-top: 3rem;
+  width: 90%;
+  margin-top: 2rem;
   display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  justify-content: center;
+  align-items: top;
+  text-align: left;
 }
 
-.content > img {
-  height: 6rem;
+.content img {
+  width: 100%;
 }
 
-.one h2 {
-  color: var(--one);
-}
+/* @media screen and (max-width: 500px) {
+  .content > img {
+    width: 100%;
+  }
+} */
 
-.two h2 {
-  color: var(--two);
-}
+.one h2 { color: var(--one); }
 
-.three h2 {
-  color: var(--three);
-}
+.two h2 { color: var(--two); }
 
-.four h2 {
-  color: var(--four);
-}
+.three h2 { color: var(--three); }
 
-.five h2 {
-  color: var(--five);
-}
+.four h2 { color: var(--four); }
 
-.six h2 {
-  color: var(--one);
-}
+.five h2 { color: var(--five); }
+
+.six h2 { color: var(--one); }
