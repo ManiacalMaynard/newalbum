@@ -25,12 +25,15 @@
 
 body {
   background-color: white;
-  font-family: sans-serif;
+  font-family: 'Lato Light', 'Roboto Light', sans-serif;
   font-weight: 300;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+nav {
 }
 
 a {
@@ -45,6 +48,9 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  position: sticky;
+  top: 0;
   font-family: 'Oswald', sans-serif;
   background-color: var(--one);
   color: var(--offwhite);
@@ -65,6 +71,11 @@ section {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+strong {
+  font-family: 'Lato', 'Roboto', sans-serif;
+  font-weight: 600;
 }
 
 hr {
@@ -91,6 +102,10 @@ p {
 
 #nav-toggle {
   font-size: 1.5rem;
+}
+
+#intro {
+
 }
 
 .content {

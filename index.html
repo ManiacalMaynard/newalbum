@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./styles.css">
 
   <script src="./scripts.js" defer></script>
+  <script src="./headerchanger.js" defer></script>
   <script src="https://kit.fontawesome.com/f8e1c1f5ec.js" crossorigin="anonymous" defer></script>
 
 
@@ -21,24 +22,27 @@
 </head>
 <body>
 
-  <header>
+  <header id="header">
     <div>
-      UX-UI Design Case Study:
       <h1>New Music Landing Page</h1>
-      by Maynard
+      UX-UI Design Case Study by Maynard
     </div>
+
     <!-- <div id="nav-toggle"><i class="fa fa-angle-down"></i></div> -->
 
-    <!-- <div class="nav-item">Intro</div>
-    <div class="nav-item">Empathize</div>
-    <div class="nav-item">Define</div>
-    <div class="nav-item">Ideate</div>
-    <div class="nav-item">Prototype</div>
-    <div class="nav-item">Conclusion</div> -->
+    <!-- <nav>
+      <div class="nav-item">Intro</div>
+      <div class="nav-item">Empathize</div>
+      <div class="nav-item"><a href="#define">Define</a></div>
+      <div class="nav-item">Ideate</div>
+      <div class="nav-item">Prototype</div>
+      <div class="nav-item">Conclusion</div>
+    </nav> -->
+
   </header>
 
   <hr style="background-color: var(--one);">
-  <section>
+  <section id="intro">
     <div>
       <h2 class="one">Introduction</h2>
       <p><em> This is my current project and is a work in progress. New sections will be added as the project moves forward through the steps from understanding the challenges, to completed code.</em></p>
@@ -55,7 +59,7 @@
 
   <hr style="background-color: var(--two);">
   
-  <section >
+  <section id="empathize">
     <h2 class="two">Empathize</h2>
       <div class="content">
         <div><img src="./images/InitialSurvey.jpg" alt="New Album Initial Survey" /></div>
@@ -78,7 +82,7 @@
   
   <hr style="color: var(--three); background-color: var(--three);">
 
-  <section>
+  <section id="define">
     <h2 class="three">Define</h2>
       <div class="content">
         <img src="./images/pexels-andrea-piacquadio-3831187-1.jpg" alt="">
@@ -100,14 +104,14 @@
 
   <hr style="color: var(--four); background-color: var(--four);">
 
-  <section class="four"><h2>Ideate</h2></section>
+  <section class="four" id="ideate"><h2>Ideate</h2></section>
 
   <hr style="color: var(--five); background-color: var(--five);">
 
-  <section class="five"><h2>Prototype</h2></section>
+  <section class="five" id="prototype"><h2>Prototype</h2></section>
 
   <hr style="color: var(--one); background-color: var(--one);">
 
-  <section class="one"><h2>Final Thoughts</h2></section>
+  <section class="one" id="conclusion"><h2>Final Thoughts</h2></section>
 </body>
 </html>
