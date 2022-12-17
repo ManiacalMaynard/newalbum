@@ -57,6 +57,7 @@ header {
   background-image: url(./images/blackvinyl.jpg);
   background-size: cover;
   background-blend-mode: multiply;
+  transition: 300ms;
 }
 
 /* .nav-item {
