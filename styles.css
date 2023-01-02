@@ -39,6 +39,16 @@ nav {
 a {
   color: hsl(185, 60%, 30%);
   text-decoration: none;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+a:hover {
+  background-color: var(--five);
+  color: var(--offwhite);
+  padding: 4px;
+  border: white 0pt solid;
+  border-radius: 3px;
 }
 
 header {
@@ -90,6 +100,7 @@ hr {
 
 h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
+  margin-top: 1rem;
 }
 
 h2 {
