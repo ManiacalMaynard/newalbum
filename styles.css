@@ -145,6 +145,16 @@ p {
     }
 }
 
+.imageGroup {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+}
+
+.imageGroup img {
+  width: 100%;
+}
+
 .one { color: var(--one); }
 
 .two { color: var(--two); }
