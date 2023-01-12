@@ -37,18 +37,22 @@ nav {
 }
 
 a {
-  color: hsl(185, 60%, 30%);
+  background-color: var(--five);
+  color: var(--offwhite);
+  padding: 2px;
+  border: white 0pt solid;
+  border-radius: 3px;
   text-decoration: none;
   font-weight: bold;
   transition: 300ms;
 }
 
 a:hover {
-  background-color: var(--five);
-  color: var(--offwhite);
-  padding: 4px;
-  border: white 0pt solid;
-  border-radius: 3px;
+  background-color: var(--four);
+}
+
+i {
+  font-style: normal;
 }
 
 header {
@@ -58,7 +62,6 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   position: sticky;
   top: 0;
   font-family: 'Oswald', sans-serif;
@@ -69,6 +72,42 @@ header {
   background-blend-mode: multiply;
   transition: 300ms;
 }
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--one);
+  color: var(--offwhite);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+footer a {
+  background-color: none;
+  font-size: 3rem;
+  color: var(--offwhite)
+}
+
+.footerLinks a {
+  background-color: inherit;
+  opacity: 0.5;
+  transition: 300ms;
+}
+
+.footerLinks a:hover {
+  background-color: inherit;
+  opacity: 1;
+}
+
+.footerLinks {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
 
 /* .nav-item {
   display: flex;
