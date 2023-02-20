@@ -25,8 +25,8 @@
 
 body {
   background-color: white;
-  font-family: 'Lato Light', 'Roboto Light', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -37,18 +37,19 @@ nav {
 }
 
 a {
-  background-color: var(--five);
-  color: var(--offwhite);
+  color: var(--five);
   padding: 2px;
   border: white 0pt solid;
   border-radius: 3px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
   transition: 300ms;
 }
 
 a:hover {
-  background-color: var(--four);
+  background-color: var(--five);
+  color: var(--offwhite);
+  text-decoration: none;
 }
 
 i {
